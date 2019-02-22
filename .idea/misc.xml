@@ -11,9 +11,6 @@
     </entry>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-  </component>
   <component name="ThriftCompiler">
     <compilers />
   </component>

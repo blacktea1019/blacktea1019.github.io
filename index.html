@@ -36,9 +36,9 @@
     -------------------------------------------------- */
 
     /* Carousel base class */
-    .carousel {
+    /*.carousel {
       margin-bottom: 4rem;
-    }
+    }*/
     /* Since positioning the image, we need to help out the caption */
     .carousel-caption {
       bottom: 3rem;
@@ -89,6 +89,55 @@
       letter-spacing: -.05rem;
     }
 
+    /* midnightstar CSS
+    -------------------------------------------------- */
+    .callout {
+        padding: 10rem 0;
+    }
+    .desc_site {
+        padding: 2rem 0 0;
+        font-style:normal;
+        font-size: 1rem;
+        line-height:1.5em;
+        color: #141414;
+    }
+    .font_wn {
+        font-weight:normal
+    }
+    .callout .btn {
+        margin-top: 2rem;
+        background-color:#000;
+        color:#fff;
+    }
+    .carousel-item {
+        height:initial;
+    }
+    .carousel-item > img {
+        position: initial;
+        top: initial;
+        left: initial;
+        height: initial;
+    }
+    .section_store {
+        padding: 2.5rem 0 1.7rem;
+        background-color:#141414;
+    }
+    footer.footer {
+        padding: 2.5rem 0;
+    }
+    footer.footer .link_instagram {
+        color: #000;
+        text-decoration: none;
+    }
+    footer.footer .link_instagram:hover {
+        text-decoration: none;
+    }
+    footer.footer .small {
+        padding: 2.5rem 0;
+    }
+    #sidebar-wrapper {
+        background-color:#141414;
+    }
 
     /* RESPONSIVE CSS
     -------------------------------------------------- */
@@ -117,6 +166,20 @@
       padding-right: 8px;
       padding-left: 8px;
     }
+
+    @media (min-width: 992px) {
+        .masthead h1 {
+            font-size: 5.5rem;
+        }
+        .portfolio-item .caption .caption-content {
+            margin-left: 2rem;
+            margin-right: 2rem;
+            margin-bottom: 2rem;
+        }
+        .portfolio-item:hover .caption {
+            background-color: rgba(20, 20, 20, .9);
+        }
+    }
   </style>
 </head>
 
@@ -129,19 +192,19 @@
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">midnight star</a>
+        <a class="js-scroll-trigger" href="#page-top">Midnight Star</a>
       </li>
       <li class="sidebar-nav-item">
         <a class="js-scroll-trigger" href="#page-top">Home</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
+        <a class="js-scroll-trigger" href="#services">PHOTO GALLERY</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger" href="#portfolio">PRODUCT</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
+        <a class="js-scroll-trigger" href="#contact">Link</a>
       </li>
     </ul>
   </nav>
@@ -149,11 +212,17 @@
   <!-- Header -->
   <header class="callout d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">midnight star</h1>
-      <h3 class="mb-5">
-        <em>감성을 담은 메모지, 스티커 등을 제작하고 있습니다.</em>
+        <h1 class="mb-1">Midnight Star</h1>
+      <h3 class="desc_site">
+          <p>
+            <em>깊은 밤, 아늑한 쉼 속의 소소한 감성 스토리.</em>
+          </p>
+          <p class="font_wn">
+            미드나잇스타에서는 <br>
+            메모지, 스티커 등 <br>소소한 문구류를 제작하고 있습니다.
+          </p>
       </h3>
-      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#services">Find Out More</a>
+      <a class="btn btn-xl js-scroll-trigger" href="#portfolio">대표 상품보기</a>
     </div>
     <div class="overlay"></div>
   </header>
@@ -162,8 +231,8 @@
   <section class="content-section text-white text-center" id="services" style="padding-top: 7.5rem; padding-bottom: 0; background-color: white;">
     <div class="container">
       <div class="content-section-heading text-center">
-        <h3 class="text-secondary mb-0">Portfolio</h3>
-        <h2 class="mb-5" style="color: #212529">둘러 보기</h2>
+        <h3 class="text-secondary mb-0">Photo Gallery</h3>
+        <h2 class="mb-5" style="color: #212529">포토갤러리</h2>
       </div>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -173,31 +242,31 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://i.imgur.com/BZYvean.png" style="width: 100%" alt="">
-            <div class="container">
+            <img src="/img/gallery_1.jpg" style="width: 100%" alt="">
+            <!--<div class="container">
               <div class="carousel-caption text-left">
                 <h1><span class="bg">Example headline.</span></h1>
                 <p><span class="bg">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</span></p>
               </div>
-            </div>
+            </div>-->
           </div>
           <div class="carousel-item">
-            <img src="https://i.imgur.com/jy4nMyJ.png" style="width: 100%" alt="">
-            <div class="container">
+            <img src="/img/gallery_2.jpg" style="width: 100%" alt="">
+            <!--<div class="container">
               <div class="carousel-caption">
                 <h1><span class="bg">Another example headline.</span></h1>
                 <p><span class="bg">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</span></p>
               </div>
-            </div>
+            </div>-->
           </div>
           <div class="carousel-item">
-            <img src="https://i.imgur.com/xJUE5BZ.png" style="width: 100%" alt="">
-            <div class="container">
+              <img src="/img/gallery_3.jpg" style="width: 100%" alt="">
+            <!--<div class="container">
               <div class="carousel-caption text-right">
                 <h1><span class="bg">One more for good measure.</span></h1>
                 <p><span class="bg">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</span></p>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -218,69 +287,100 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h3 class="text-secondary mb-0">Product</h3>
-        <h2 class="mb-5">전체 상품</h2>
+        <h2 class="mb-5">대표 상품</h2>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6">
-          <a class="portfolio-item" target="_blank" href="img/portfolio-1.jpg">
+        <div class="col-md-4">
+          <a class="portfolio-item" target="_blank" href="https://smartstore.naver.com/midnight_star/products/4213730780">
             <span class="caption">
               <span class="caption-content">
-                <h2>스티커팩</h2>
+                <h2>[스티커팩]</h2>
+                <p class="mb-0">일본영화 명장면 스틸컷</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/portfolio_1.jpg" alt="인스 스티커팩 - 일본영화 명장면 스틸컷">
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a class="portfolio-item" target="_blank" href="https://smartstore.naver.com/midnight_star/products/4214242222">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>[스티커팩]</h2>
                 <p class="mb-0">외국영화 명장면 스틸컷</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio_2.jpg" alt="인스 스티커팩 - 외국영화 명장면 스틸컷">
           </a>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+        <div class="col-md-4">
+          <a class="portfolio-item" target="_blank" href="https://smartstore.naver.com/midnight_star/products/4214332138">
             <span class="caption">
               <span class="caption-content">
-                <h2>Ice Cream</h2>
-                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                <h2>[스티커팩]</h2>
+                <p class="mb-0">빈티지 레트로</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+              <img class="img-fluid" src="img/portfolio_3.jpg" alt="인스 스티커팩 - 빈티지 레트로">
           </a>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+        <div class="col-md-4">
+          <a class="portfolio-item" target="_blank" href="https://smartstore.naver.com/midnight_star/products/4214384933">
             <span class="caption">
               <span class="caption-content">
-                <h2>Strawberries</h2>
-                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+                <h2>[스티커팩]</h2>
+                <p class="mb-0">감성사진</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+            <img class="img-fluid" src="img/portfolio_4.jpg" alt="인스 스티커팩 - 감성사진">
           </a>
         </div>
-        <div class="col-lg-6">
-          <a class="portfolio-item" href="#">
+          <div class="col-md-4">
+              <a class="portfolio-item" target="_blank" href="https://smartstore.naver.com/midnight_star/products/4214502120">
             <span class="caption">
               <span class="caption-content">
-                <h2>Workspace</h2>
-                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                <h2>[스티커팩]</h2>
+                <p class="mb-0">명화</p>
               </span>
             </span>
-            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-          </a>
-        </div>
+                  <img class="img-fluid" src="img/portfolio_5.jpg" alt="인스 스티커팩 - 명화">
+              </a>
+          </div>
+          <div class="col-md-4">
+              <a class="portfolio-item" target="_blank" href="https://smartstore.naver.com/midnight_star/products/4214543103">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>[스티커팩]</h2>
+                <p class="mb-0">빈티지 보태니컬 수채화</p>
+              </span>
+            </span>
+                  <img class="img-fluid" src="img/portfolio_6.jpg" alt="인스 스티커팩 - 빈티지 보태니컬 수채화 일러스트">
+              </a>
+          </div>
       </div>
     </div>
   </section>
 
   <!-- Call to Action -->
-  <section class="content-section bg-primary text-white" id="contact">
+  <section class="content-section section_store text-white" id="contact">
     <div class="container text-center">
-      <h2 class="mb-4">스토어팜에서 상품을 판매하고 있습니다.</h2>
-      <a target="_blank" href="https://smartstore.naver.com/midnight_star/category/ALL?cp=1" class="btn btn-xl btn-light mr-4"><i class="fas fa-store"></i>&nbsp;&nbsp;보러가기</a>
-      <a target="_blank" href="https://talk.naver.com/ct/wc1q6a" class="btn btn-xl btn-light"><i class="fas fa-headset"></i>&nbsp;&nbsp;문의하기</a>
+      <h4 class="mb-4">미드나잇스타의 모든 상품은 <br> 네이버 스마트스토어에서 <br> 구매하실 수 있습니다.</h4>
+        <a target="_blank" href="https://smartstore.naver.com/midnight_star/" class="btn btn-l btn-light m-2"><i class="fas fa-store"></i>&nbsp;스토어</a>
+        <a target="_blank" href="https://talk.naver.com/ct/wc1q6a" class="btn btn-l btn-light m-2"><i class="fas fa-comments"></i>&nbsp;문의하기</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
+        <a class="link_instagram" href="https://www.instagram.com/midnight_star.studio/" target="_blank" title="미드나잇스타 인스타그램">
+            <img class="mb-1" src="/img/instagram_logo.png" alt="미드나잇스타 인스타그램">
+            <p>
+                <strong>인스타그램</strong>
+                <br>
+                @midnight_star.studio
+            </p>
+        </a>
+        <!--
       <ul class="list-inline mb-5">
         <li class="list-inline-item">
           <a class="social-link rounded-circle text-white mr-3" href="#">
@@ -298,7 +398,8 @@
           </a>
         </li>
       </ul>
-      <p class="text-muted small mb-0">Copyright &copy; Your Website 2019</p>
+-->
+      <p class="text-muted small mb-0">Copyright &copy; midnightstar 2019</p>
     </div>
   </footer>
 
