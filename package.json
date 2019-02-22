@@ -3,8 +3,7 @@
     "name": "startbootstrap-stylish-portfolio",
     "version": "5.0.3",
     "scripts": {
-        "start": "node app.js",
-        "dev": "gulp watch"
+        "start": "gulp watch"
     },
     "description": "A stylish portfolio HTML template built with Bootstrap",
     "keywords": [
@@ -32,7 +31,6 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.7.2",
         "bootstrap": "4.3.1",
-        "express": "^4.16.4",
         "jquery": "3.3.1",
         "jquery.easing": "^1.4.1",
         "simple-line-icons": "^2.4.1"
